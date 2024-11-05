@@ -1,4 +1,4 @@
-package AlgoritmosDevoradores;
+package AlgoritmosDevoradores.Cajero;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -64,6 +64,7 @@ public class Cajero {
         }
     }
 
+    // Metodo para determinar si es posible realizar el retiro señalado por el cliente
     public static boolean isPossibleMakeWithdrawal(Map<Integer, Integer> mapWithdrawal, int amount){
         int sum = 0;
         for (Map.Entry<Integer, Integer> entry : mapWithdrawal.entrySet()) {
